@@ -23,8 +23,13 @@ Olfaction is important for identifying and avoiding toxic substances in living s
 <h2>
 How to Use
 </h2>
-<p>Clone the repository with: `git clone [repository link]`</p>
-<p> We have included some of our preprosessed data in the raman_data folder, first, unzip any zipped files in that folder </p>
+<p>Clone the repository with: </p>
+    git clone [repository link]
+
+<p> We have included some of our preprosessed data in the raman_data folder, but it has to be reconstructed from smaller files</p>
+<p> to reconstruct the data please run:</p>
+
+    . setup.sh
 
 <p> Then run ModelsOnData.py which will take the data from raman_data and train and report on three types of models:</p>
 
