@@ -24,6 +24,7 @@ Olfaction is important for identifying and avoiding toxic substances in living s
 How to Use
 </h2>
 <p>Clone the repository with: </p>
+
     git clone [repository link]
 
 <p> We have included some of our preprosessed data in the raman_data folder, but it has to be reconstructed from smaller files</p>
@@ -31,7 +32,11 @@ How to Use
 
     . setup.sh
 
-<p> Then run ModelsOnData.py which will take the data from raman_data and train and report on three types of models:</p>
+<p> Then to run the project: </p>
+
+    python ModelsOnData.py 
+
+<p> This program will take the data from raman_data and train and report on three types of models:</p>
 
 - Convolutional Neural Networks (CNN) which scans over the data with a window and keeps the spacial information in tact
 - Support Vector Classifier (SVC) which uses a flattened version of the input data, and treats that as a vector in a high dimensional plane. The SVC then finds planes that seperate the data into each classification.
