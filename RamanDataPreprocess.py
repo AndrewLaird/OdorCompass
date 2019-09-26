@@ -449,8 +449,8 @@ def process(X_train, X_test, file):
     return X_train, X_test, y_train, y_test
 
 
-base_location = "/home/andrew/research/directional/direction/"
-specific_locations = ["Multiplex/9-21-18", "Multiplex/9-17-18", "8-8-18", "9-14-18", "10-11-18"]
+base_location = "path/to/save/locations"
+specific_locations = ["subdirectories", "In", "save/folder"]
 direction_of_smell = [(0, 2), (2, -1), (2, -1), (-1, 0), (2, 2)]
 
 spectra_locations = [base_location + sub_location for sub_location in specific_locations]
@@ -499,7 +499,7 @@ for i in range(len(spectra_locations)):
 X_test, y_test = shuffle(X_test, y_test)
 X_train, y_train = shuffle(X_train, y_train)
 
-save_directory = "/home/andrew/research/Smell-O-ScopePaper/direct_results_test/"
+save_directory = "path/to/save/locations"
 
 for sniffs in range(1,16):
     np.save(save_directory + f"X_train_{sniffs}.npy", X_train)
